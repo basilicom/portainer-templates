@@ -17,10 +17,10 @@
         {
           "name": "INSTANCE",
           "label": "Instance",
-          "description": "The instance name is used for unique configuration keys, e.g. for traefik"
+          "description": "The instance name (must be unique) is used for configuration keys, e.g. for traefik"
         },
         {
-          "name": "Domain",
+          "name": "DOMAIN",
           "label": "Domain name",
           "description": "The domain name for traefik configuration"
         },
