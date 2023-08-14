@@ -30,6 +30,31 @@
           "description": "JWT key for authentication"
         }
       ]
+    },
+    {
+      "type": 3,
+      "title": "SonarQube",
+      "description": "SonarQube is a self-managed, automatic code review tool that systematically helps you deliver clean code.",
+      "note": "See https://docs.sonarsource.com/sonarqube/latest/",
+      "categories": ["Development"],
+      "platform": "linux",
+      "logo": "https://user-images.githubusercontent.com/15386828/118396592-e331c880-b658-11eb-8fdc-7426520c691f.png",
+      "repository": {
+        "url": "https://github.com/basilicom/portainer-templates",
+        "stackfile": "stacks/sonarqube/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "INSTANCE",
+          "label": "Instance",
+          "description": "The instance name (must be unique) is used for configuration keys, e.g. for traefik"
+        },
+        {
+          "name": "DOMAIN",
+          "label": "Domain name",
+          "description": "The domain name for traefik configuration"
+        }
+      ]
     }
   ]
 }
