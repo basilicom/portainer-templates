@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 3,
+      "title": "Mercure",
+      "description": "Mercure is a solution for pub-sub real-time communications used by the Pimcore Direct Edit bundle.",
+      "note": "See https://mercure.rocks/",
+      "categories": ["Service"],
+      "platform": "linux",
+      "logo": "https://pbs.twimg.com/profile_images/1226615165749096448/VF-CZFzN_400x400.jpg",
+      "repository": {
+        "url": "https://github.com/basilicom/portainer-templates",
+        "stackfile": "stacks/mercure/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "INSTANCE",
+          "label": "Instance",
+          "description": "The instance name is used for unique configuration keys, e.g. for traefik"
+        },
+        {
+          "name": "Domain",
+          "label": "Domain name",
+          "description": "The domain name for traefik configuration"
+        },
+        {
+          "name": "JWT_KEY",
+          "label": "JWT Key",
+          "description": "JWT key for authentication"
+        }
+      ]
+    }
+  ]
+}
